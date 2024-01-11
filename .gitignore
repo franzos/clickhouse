@@ -1,0 +1,5 @@
+data/*.csv
+data/*.db
+node_modules
+dist
+.clickhouse

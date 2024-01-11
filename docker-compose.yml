@@ -1,0 +1,16 @@
+version: '3'
+services:
+  db:
+    image: clickhouse/clickhouse-server
+    container_name: clickhouse
+    network_mode: "host"
+    volumes:
+      - ./.clickhouse/data:/var/lib/clickhouse
+      - ./.clickhouse/logs:/var/log/clickhouse-server
+      - ./.clickhouse/config:/etc/clickhouse-server/config.d/*.xml
+      - ./.clickhouse/users:/etc/clickhouse-server/users.d/*.xml
+    environment:
+      - CLICKHOUSE_DB=default
+      - CLICKHOUSE_USER=default
+      - CLICKHOUSE_PASSWORD=default
+      - CLICKHOUSE_DEFAULT_ACCESS_MANAGEMENT=1

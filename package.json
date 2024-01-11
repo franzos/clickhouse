@@ -1,0 +1,27 @@
+{
+  "name": "clickhouse",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@clickhouse/client": "^0.2.7",
+    "better-sqlite3": "^9.2.2",
+    "csv-parse": "^5.5.3"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.8",
+    "@typescript-eslint/eslint-plugin": "^6.18.1",
+    "@typescript-eslint/parser": "^6.18.1",
+    "@types/node": "^20.10.8",
+    "eslint": "^8.56.0",
+    "prettier": "3.1.1",
+    "typescript": "^5.3.3"
+  }
+}
